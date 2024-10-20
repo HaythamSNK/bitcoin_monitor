@@ -62,7 +62,7 @@ data "aws_ami" "ubuntu" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20220420"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
   }
 
   filter {
@@ -110,7 +110,7 @@ sudo chmod 666 /var/run/docker.sock
 sudo apt install make
 
 echo 'Clone git repo to EC2'
-cd /home/ubuntu && git clone https://github.com/josephmachado/bitcoinMonitor.git
+cd /home/ubuntu && git clone https://github.com/HaythamSNK/bitcoinMonitor.git
 
 echo 'CD to bitcoinMonitor directory'
 cd bitcoinMonitor

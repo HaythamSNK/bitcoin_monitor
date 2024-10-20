@@ -2,7 +2,7 @@
 variable "aws_region" {
   description = "AWS region"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-west-3"
 }
 
 ## Key to allow connection to our EC2 instance
@@ -16,12 +16,12 @@ variable "key_name" {
 variable "instance_type" {
   description = "Instance type for EMR and EC2"
   type        = string
-  default     = "m4.xlarge"
+  default     = "t2.micro"
 }
 
 ## Alert email receiver
 variable "alert_email_id" {
   description = "Email id to send alerts to "
   type        = string
-  default     = "joseph.machado@domain.com"
+  default     = "sakayjin986@gmail.com"
 }
